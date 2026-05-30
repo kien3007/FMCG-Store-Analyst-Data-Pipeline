@@ -27,7 +27,7 @@ The pipeline follows the modern **ELT (Extract, Load, Transform)** paradigm, ens
 ## 🗃️ Data Modeling (dbt)
 The transformation logic is strictly organized into 3 conceptual layers to build a Kimball-style dimensional model:
 
-### Raw Data Schema (ERD)
+### Data Schema (ERD)
 ![Raw Data Schema](images/raw_data_schema.png)
 
 *   **Staging (`stg_`):** Base views focusing on type casting, renaming, and basic deduplication. (e.g., `stg_sales`, `stg_customers`). These are exactly 1:1 with the raw tables but cleaned.
@@ -53,7 +53,7 @@ The transformation logic is strictly organized into 3 conceptual layers to build
 git clone https://github.com/YourUsername/FMCG-Store-Analyst-Data-Pipeline.git
 cd FMCG-Store-Analyst-Data-Pipeline
 python -m venv .venv
-source .venv/Scripts/activate  # Windows: .venv\Scripts\activate
+source .venv/Scripts/activate
 pip install -r docs/requirements.txt
 ```
 
