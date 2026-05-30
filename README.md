@@ -83,17 +83,29 @@ docker-compose up -d
 *   Trigger the `fmcg_dbt_pipeline` DAG to execute the entire dbt transformation flow.
 
 ## 📈 Power BI Dashboard
-The repository contains the final Power BI file (`.pbix`). The dashboard is designed following a **Traditional 2-Page Navigation** layout to serve different analytical needs:
+The repository contains the final Power BI Dashboard. The dashboard is designed following a **Traditional 2-Page Navigation** layout to serve different analytical needs:
 
 ### Page 1: Revenue Performance
 Focuses on overall financial health, top-selling categories, product matrix (loss leaders vs star products), and global geographic distribution.
 
 ![Revenue Performance Dashboard](images/Revenue_Performance.png)
 
+**🔍 Key Insights:**
+*   **Massive Scale:** The business generated over **$4.33 Billion** in total revenue across **6.75 million** transactions within just a 5-month period (Jan-May 2018).
+*   **Top Products:** Interestingly, the Best Selling Product overall is **Anchovy Paste - 56 G Tube**, alongside other top revenue drivers like Calabrese Baguettes, Shrimp, and Passion Fruit Puree (each driving nearly ~$19M).
+*   **Geographic Concentration:** Sales are heavily concentrated in and around the **Columbus, Ohio** metropolitan area.
+*   **Revenue Trend:** Revenue remained consistently around $1 Billion per month from January to April before experiencing a sharp drop in May 2018, which likely indicates incomplete data for the final month.
+
 ### Page 2: Operational Insights
-Highlights customer retention rates (Repeat vs One-time), VIP customer segmentation, and employee consistency trends using Small Multiples line charts.
+Highlights customer retention rates, customer segmentation, and employee consistency trends.
 
 ![Operational Insights Dashboard](images/Operational_Insights.png)
+
+**🔍 Key Insights:**
+*   **Exceptional Loyalty:** The Customer Retention chart is entirely dominated by **Repeat** customers, indicating an incredibly loyal customer base among the ~98.7K total customers.
+*   **High-Value Transactions:** The Average Order Value sits at a healthy **$641.07** with an average basket size of 13 items.
+*   **Employee Consistency:** Top performers like **Devon Brewer** show incredibly consistent revenue generation month-over-month. The "Employee Consistency Trend" small multiples reveal that all top employees experienced the exact same synchronized drop in May 2018, confirming it is a systemic data cut-off issue rather than individual performance drops.
+*   **Customer Segmentation:** The scatter plot reveals distinct clusters of buyer personas based on their order frequency and total revenue contribution, allowing for targeted marketing campaigns.
 
 
 ## 📁 Repository Structure
