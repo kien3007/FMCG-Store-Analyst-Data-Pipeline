@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw_data
+    schema: raw
+    tables:
+      - name: categories
+      - name: cities
+      - name: countries
+      - name: customers
+      - name: employees
+      - name: products
+      - name: sales

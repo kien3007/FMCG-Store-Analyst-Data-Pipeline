@@ -1,0 +1,13 @@
+fmcg_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: postgres
+      port: 54322
+      dbname: postgres
+      schema: public
+      threads: 4
+      keepalives_idle: 0

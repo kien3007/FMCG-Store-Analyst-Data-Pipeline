@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+
+# Airflow
+airflow/logs/
+
+# Secrets
+.env
+
+# MacOS/Windows OS Files
+.DS_Store
+Thumbs.db
+
+# Documentation
+docs/
+
+# Raw Datasets
+datasets/*.csv
